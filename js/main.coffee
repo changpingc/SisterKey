@@ -170,6 +170,7 @@ class @SearchAppRouterClass extends Backbone.Router
   routes:
     "search/:query":                  "redirectSearch"
     "search/:query/p:page":           "search"
+    "search/:query/p:page/":          "search"
     "search/:query/p:page/:options":  "search"
 
   redirectSearch: (query) =>

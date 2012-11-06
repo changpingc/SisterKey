@@ -269,6 +269,7 @@
     SearchAppRouterClass.prototype.routes = {
       "search/:query": "redirectSearch",
       "search/:query/p:page": "search",
+      "search/:query/p:page/": "search",
       "search/:query/p:page/:options": "search"
     };
 
