@@ -31,6 +31,7 @@ class @SearchAppClass extends Backbone.View
     @results_tpl = _.template($("#search-results-list-template").html())
     @error_tpl = _.template($("#search-error-template").html())
     @render()
+    @$el.find("input.searchbox").focus()
 
   events:
     "click a.search-button":       "searchButtonClicked"

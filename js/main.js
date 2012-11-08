@@ -79,7 +79,8 @@
       this.response = null;
       this.results_tpl = _.template($("#search-results-list-template").html());
       this.error_tpl = _.template($("#search-error-template").html());
-      return this.render();
+      this.render();
+      return this.$el.find("input.searchbox").focus();
     };
 
     SearchAppClass.prototype.events = {
